@@ -301,6 +301,10 @@ textarea:focus{
         padding: 2rem 1.6rem;
     }
 
+    .card-container{
+        width: 100%;
+    }
+
     .form-header-container h3{
         font-size: 1rem;
     }
@@ -316,7 +320,6 @@ textarea:focus{
     }
 
     .card-container{
-        width: 100%;
         padding: 1rem;
     }
 
