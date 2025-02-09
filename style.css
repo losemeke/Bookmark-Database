@@ -209,7 +209,7 @@ input{
 }
 
 input::placeholder{
-    font-size: .7rem;
+    font-size: .9rem;
     color: #999;
 }
 
@@ -229,7 +229,7 @@ textarea{
 }
 
 textarea::placeholder{
-    font-size: .7rem;
+    font-size: .9rem;
     color: #999;
 }
 
