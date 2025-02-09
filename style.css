@@ -289,7 +289,7 @@ textarea:focus{
     }
 
     .intro-text h1{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .add-button-container button{
@@ -305,25 +305,22 @@ textarea:focus{
         width: 100%;
     }
 
+    .form-parent-container {
+        width: 60%;
+    }
+
     .form-header-container h3{
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 400px){
-    .first-section{
-        padding: 1.5rem 1rem;
-    }
 
-    .add-button-container button{
+    /* .add-button-container button{
         padding: .5rem;
-    }
+    } */
 
     .card-container{
         padding: 1rem;
-    }
-
-    .form-parent-container {
-        width: 60%;
     }
 }
