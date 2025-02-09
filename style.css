@@ -278,14 +278,6 @@ textarea:focus{
         padding: .8rem;
     }
 
-    .card-title-and-delete-icon-container a{
-        font-size: .95rem;
-    }
-
-    .card-description p{
-        font-size: .9rem;
-    }
-
     .form-parent-container {
         width: 50%;
     }
@@ -309,14 +301,6 @@ textarea:focus{
         padding: 2rem 1.6rem;
     }
 
-    .card-title-and-delete-icon-container a{
-        font-size: .9rem;
-    }
-
-    .card-description p{
-        font-size: .9rem;
-    }
-
     .form-header-container h3{
         font-size: 1rem;
     }
@@ -333,5 +317,9 @@ textarea:focus{
 
     .card-container{
         padding: 1rem;
+    }
+
+    .form-parent-container {
+        width: 55%;
     }
 }
