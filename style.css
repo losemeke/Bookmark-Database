@@ -209,7 +209,7 @@ input{
 }
 
 input::placeholder{
-    font-size: .9rem;
+    font-size: .95rem;
     color: #999;
 }
 
@@ -229,7 +229,7 @@ textarea{
 }
 
 textarea::placeholder{
-    font-size: .9rem;
+    font-size: .95rem;
     color: #999;
 }
 
@@ -316,10 +316,11 @@ textarea:focus{
     }
 
     .card-container{
+        width: 100%;
         padding: 1rem;
     }
 
     .form-parent-container {
-        width: 55%;
+        width: 60%;
     }
 }
