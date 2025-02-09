@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -.2px;    
+}
+
+body {
+    background-color: #E6F7FF;
+}
+
+.first-section{
+    width: 90%;
+    height: auto;
+    background-color: #C3E8F2;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #d7d7d7;
+}
+
+.intro-text{
+    width: fit-content;
+    height: auto;
+}
+
+.intro-text h1{
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.add-button-container{
+    width: fit-content;
+    height: auto;
+}
+
+.add-button-container button{
+    color: #000;
+    background-color: #FF5E78;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: 1px solid #d7d7d7;
+    font-weight: 600;
+}
+
+.content-container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    background-color: #C3E8F2;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* this makes sure the cards are the same height*/
+    justify-content: space-between;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    row-gap: .5rem;border-radius: 1rem;
+    border: 1px solid #d7d7d7;
+}
+
+.card-container{
+    width: 32%;
+    height: auto;
+    background-color: #E6F7FF;
+    padding: 1.2rem;
+    border-radius: .5rem;
+    border: .5px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+    row-gap: .9rem;
+    flex-grow: 1;
+}
+
+.card-title-and-delete-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card-title-and-delete-icon-container a{
+    text-decoration: none;
+    color: #444;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.card-title-and-delete-icon-container i{
+    cursor: pointer;
+}
+
+.card-description{
+    width: 100%;
+    height: auto;
+}
+
+.card-description p{
+    font-size: .95rem;
+    color: #444;
+}
+
+/* modals are always fixed to every corner of the page to avoid scrolling  */
+.modal-overlay-container{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden; /* by default */
+}
+/* making a 2nd modal container thats not hidden so when button is clicked, JS changes the class to visible */
+.modal-overlay-container-visible{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible; 
+}
+
+.form-parent-container {
+    width: 35%;
+    height: auto;
+    background-color: #E6F7FF;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.cancel-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.cancel-icon-container i{
+    cursor: pointer;
+}
+
+.form-header-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: .75rem;
+    margin-bottom: .5rem;
+}
+
+.form-header-container h3{
+    font-size: 1.1rem;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 1.5rem;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: .3rem;
+}
+
+label{
+    font-size: .85rem;
+    font-weight: 550;
+}
+
+input{
+    width: 100%;
+    height:auto ;
+    padding: 1rem 2rem 1rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    background-color: #F2FAFC;
+}
+
+input::placeholder{
+    font-size: .7rem;
+    color: #999;
+}
+
+/* effects when input is selected */
+input:focus{
+    border: 1px solid #FF5E78;
+}
+
+textarea{
+    width: 100%;
+    height: 5rem;
+    border-radius: .5rem;
+    border: 1px solid #e3e3e3;
+    padding: .7rem .5rem .5rem 1rem;
+    outline: none;
+    background-color: #F2FAFC;
+}
+
+textarea::placeholder{
+    font-size: .7rem;
+    color: #999;
+}
+
+textarea:focus{
+    border: 1px solid #FF5E78;
+}
+
+.form-button-container{
+    width: 100%;
+    height: auto;
+}
+
+.form-button-container button{
+    width: 100%;
+    height: auto;
+    color: black;
+    background-color: #FF5E78;
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: 1px solid whitesmoke;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 900px){
+    .form-parent-container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .card-container{
+        width: 45%;        
+    }
+
+    .card-title-and-delete-icon-container a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-section{
+        padding: 2rem 1.5rem;
+    }
+
+    .add-button-container button{
+        padding: .8rem;
+    }
+
+    .card-title-and-delete-icon-container a{
+        font-size: .95rem;
+    }
+
+    .card-description p{
+        font-size: .9rem;
+    }
+
+    .form-parent-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .first-section{
+        padding: 1.5rem 1rem;
+    }
+
+    .intro-text h1{
+        font-size: 1rem;
+    }
+
+    .add-button-container button{
+        padding: .7rem;
+        font-size: .8rem;
+    }
+
+    .content-container{
+        padding: 2rem 1.6rem;
+    }
+
+    .card-title-and-delete-icon-container a{
+        font-size: .85rem;
+    }
+
+    .card-description p{
+        font-size: .85rem;
+    }
+
+    .form-header-container h3{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .first-section{
+        padding: 1.5rem 1rem;
+    }
+
+    .add-button-container button{
+        padding: .5rem;
+    }
+
+    .card-container{
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Research Database </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="first-section">
+        <div class="intro-text">
+            <h1> Welcome to Search Bank </h1>
+        </div>
+
+        <div class="add-button-container">
+            <button id="add-button"> Add Resource </button>
+        </div>
+    </div>
+
+    <div class="content-container" id="content-container">
+        <!-- <div class="card-container">
+            <div class="card-title-and-delete-icon-container">
+                <a href="#" target="_blank"> Human Anatomy </a>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <div class="card-description">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ad iure repellat, magnam est architecto praesentium. </p>
+            </div>
+        </div> -->
+    </div>
+    
+    <div class="modal-overlay-container" id="modal-overlay-container">
+        <div class="form-parent-container">
+            <div class="cancel-icon-container">
+                <i class="fa-solid fa-xmark" id="xmark"></i>
+            </div>
+
+            <div class="form-header-container">
+                <h3> Add Resource </h3>
+            </div>
+
+            <form id="form">
+                <div class="input-group">
+                    <label for="resource-name"> Resource Name </label>
+                    <input type="text" name="resource-name" id="resource-name" placeholder="eg Human Anatomy">
+                </div>
+
+                <div class="input-group">
+                    <label for="resource-link"> Resource Link </label>
+                    <input type="text" name="resource-link" id="resource-link" placeholder="https://www.britannica.com/science/human-body">
+                </div>
+
+                <div class="input-group">
+                    <label for="resource-description"> Resource Description </label>
+                    <textarea name="resource-description" id="resource-description" placeholder="Enter Description"></textarea>
+                </div>
+
+                <div class="form-button-container">
+                    <button id="submit-button" type="submit"> Add Item </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
