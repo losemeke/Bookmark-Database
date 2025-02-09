@@ -95,7 +95,7 @@ body {
 .card-title-and-delete-icon-container a{
     text-decoration: none;
     color: #444;
-    font-size: .95rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .card-description p{
-    font-size: .95rem;
+    font-size: 1rem;
     color: #444;
 }
 
@@ -267,10 +267,6 @@ textarea:focus{
     .card-container{
         width: 45%;        
     }
-
-    .card-title-and-delete-icon-container a{
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -306,7 +302,7 @@ textarea:focus{
 
     .add-button-container button{
         padding: .7rem;
-        font-size: .8rem;
+        font-size: .95rem;
     }
 
     .content-container{
@@ -314,11 +310,11 @@ textarea:focus{
     }
 
     .card-title-and-delete-icon-container a{
-        font-size: .85rem;
+        font-size: .9rem;
     }
 
     .card-description p{
-        font-size: .85rem;
+        font-size: .9rem;
     }
 
     .form-header-container h3{
