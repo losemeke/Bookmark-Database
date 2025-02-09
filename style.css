@@ -278,6 +278,10 @@ textarea:focus{
         padding: .8rem;
     }
 
+    .card-container{
+        width: 100%;
+    }
+
     .form-parent-container {
         width: 50%;
     }
@@ -299,10 +303,6 @@ textarea:focus{
 
     .content-container{
         padding: 2rem 1.6rem;
-    }
-
-    .card-container{
-        width: 100%;
     }
 
     .form-parent-container {
