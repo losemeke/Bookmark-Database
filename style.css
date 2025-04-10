@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #E6F7FF;
+    background-color: #F4F8FB;
 }
 
 .first-section{
@@ -27,10 +27,19 @@ body {
 .intro-text{
     width: fit-content;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: .5rem;
 }
 
 .intro-text h1{
     font-size: 1.3rem;
+    color: #444;
+}
+
+.intro-text p{
+    font-size: 1rem;
     color: #444;
 }
 
@@ -40,8 +49,8 @@ body {
 }
 
 .add-button-container button{
-    color: #000;
-    background-color: #FF5E78;
+    color: #2E2E2E;
+    background-color: #6A8CAF;
     padding: 1rem 1.5rem;
     border: none;
     outline: none;
@@ -71,7 +80,7 @@ body {
 .card-container{
     width: 32%;
     height: auto;
-    background-color: #E6F7FF;
+    background-color: #F9FBFC;
     padding: 1.2rem;
     border-radius: .5rem;
     border: .5px solid #d7d7d7;
@@ -143,7 +152,7 @@ body {
 .form-parent-container {
     width: 35%;
     height: auto;
-    background-color: #E6F7FF;
+    background-color: #F4F8FB;
     border-radius: 1rem;
     padding: 1.5rem;
 }
@@ -171,6 +180,7 @@ body {
 
 .form-header-container h3{
     font-size: 1.1rem;
+    color: #2c2c2c;
 }
 
 form{
@@ -205,7 +215,7 @@ input{
     border-radius: .5rem;
     border: 1px solid #e3e3e3;
     outline: none;
-    background-color: #F2FAFC;
+    background-color: #F4f8fb;
 }
 
 input::placeholder{
@@ -215,7 +225,8 @@ input::placeholder{
 
 /* effects when input is selected */
 input:focus{
-    border: 1px solid #FF5E78;
+    border: 1px solid #6A8CAF;
+    background-color: #F4f8fb;
 }
 
 textarea{
@@ -225,7 +236,7 @@ textarea{
     border: 1px solid #e3e3e3;
     padding: .7rem .5rem .5rem 1rem;
     outline: none;
-    background-color: #F2FAFC;
+    background-color: #F4f8fb;
 }
 
 textarea::placeholder{
@@ -234,7 +245,7 @@ textarea::placeholder{
 }
 
 textarea:focus{
-    border: 1px solid #FF5E78;
+    border: 1px solid #6A8CAF;
 }
 
 .form-button-container{
@@ -245,16 +256,16 @@ textarea:focus{
 .form-button-container button{
     width: 100%;
     height: auto;
-    color: black;
-    background-color: #FF5E78;
+    color: #2E2E2E;
+    background-color: #6A8CAF;
     padding: .8rem 1rem;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: .5rem;
-    border: 1px solid whitesmoke;
+    border: 1px solid #4C6A91;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 @media screen and (max-width: 900px){
@@ -315,11 +326,6 @@ textarea:focus{
 }
 
 @media screen and (max-width: 400px){
-
-    /* .add-button-container button{
-        padding: .5rem;
-    } */
-
     .card-container{
         padding: 1rem;
     }
